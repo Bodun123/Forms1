@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форми</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        p {
+            color: aqua;
+            font-size: 44px;
+            text-align: center;
+        }
+        form {
+            font-size: 24px;
+            margin: auto;
+            border: 5px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p>Ми вивчаємо форми</p>
+    <form action="" method="post">
+        <label for="name">Ім'я:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="phone">Номер телефону:</label><br>
+        <input type="tel" id="phone" name="phone" required><br>
+        <label for="car_brand">Бренд</label><br>
+        <select id="car_brand" name="car_brand" required>
+            <option value="">Оберіть бренд</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes-Benz">Mercedes-Benz</option>
+            <option value="Audi">Audi</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Honda">Honda</option>
+            <option value="Інші">Інші</option>
+        </select><br>
+        <label for="message">Додаткова інформація</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Відправити дані">
+        <input type="reset" value="Скинути дані">
+    </form>
+</body>
+</html>
